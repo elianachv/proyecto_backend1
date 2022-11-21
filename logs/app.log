@@ -1,0 +1,457 @@
+2022-11-04 19:48:22,092 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 19:48:22,151 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 19:48:22,157 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 19:48:22,159 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 20:27:16,302 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:27:16,338 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:27:16,342 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:27:16,355 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 20:27:54,044 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:27:54,086 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:27:54,091 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:27:54,093 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 20:30:46,362 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:30:46,399 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:30:46,404 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:30:46,406 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 4321 NO encontrado
+2022-11-04 20:30:46,409 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 4321 creado con exito
+2022-11-04 20:30:46,411 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] 2 odontologos encontrados
+2022-11-04 20:30:46,430 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:30:46,432 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:30:46,433 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:30:46,434 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 20:30:46,436 ERROR c.e.p.i.d.h.OdontologoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.DuplicadoException: El odontologo ya se encuentra registrado. Intenta eliminarlo y crearlo nuevamente o modificarlo
+2022-11-04 20:30:46,437 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] 1 odontologos encontrados
+2022-11-04 20:30:46,455 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:30:46,459 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:30:46,460 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:30:46,461 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 20:30:46,476 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:30:46,477 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:30:46,479 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:30:46,481 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 eliminado correctamente
+2022-11-04 20:30:46,482 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:30:46,497 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:30:46,498 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 NO encontrado
+2022-11-04 20:30:46,499 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 creado con exito
+2022-11-04 20:30:46,502 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 modificado correctamente
+2022-11-04 20:30:46,503 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Lina', apellido='Vargas'}
+2022-11-04 20:54:25,855 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:54:25,899 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 20:54:25,904 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 20:54:25,912 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [modificar] Paciente 90123 modificado correctamente
+2022-11-04 20:54:25,915 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Lina', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 20:54:25,936 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:54:25,939 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 20:54:25,940 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 20:54:25,942 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 20:54:25,958 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:54:25,959 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 20:54:25,961 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 20:54:25,961 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [eliminar] Paciente 90123 eliminado correctamente
+2022-11-04 20:54:25,962 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 20:54:25,978 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:54:25,980 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 20:54:25,981 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 20:54:25,982 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 20:54:25,983 ERROR c.e.p.i.d.h.PacienteDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.DuplicadoException: El paciente ya se encuentra registrado. Intenta eliminarlo y crearlo nuevamente o modificarlo
+2022-11-04 20:54:25,985 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [listarTodos] 1 pacientes encontrados
+2022-11-04 20:54:26,000 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 20:54:26,001 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 20:54:26,002 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 20:54:26,003 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 901235 NO encontrado
+2022-11-04 20:54:26,004 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 901235 creado con exito
+2022-11-04 20:54:26,005 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [listarTodos] 2 pacientes encontrados
+2022-11-04 21:47:20,154 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:47:20,203 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:47:20,207 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:47:20,209 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 21:47:20,210 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 21:47:20,212 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:47:20,213 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:47:20,216 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:47:20,217 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:47:20,259 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:47:20,260 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:47:20,261 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:47:20,262 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:47:20,263 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:47:20,265 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 21:47:20,265 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 21:47:20,288 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:47:20,302 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:47:20,304 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:47:20,305 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:47:20,307 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:47:20,310 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:47:20,311 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:47:20,354 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:47:20,356 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:47:20,357 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:47:20,358 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:47:20,359 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 21:47:20,361 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 21:47:20,389 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:47:20,391 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:47:20,392 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:47:20,393 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 21:47:20,395 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 21:47:20,395 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:47:20,397 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:47:20,400 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 21:47:20,402 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 21:47:20,409 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:47:20,411 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:47:20,464 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:47:20,465 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:47:20,476 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:47:20,478 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:47:20,479 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:47:20,480 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:47:20,482 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:23,550 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:23,596 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:23,601 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:52:23,604 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:23,605 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:52:23,609 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:23,610 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:23,613 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:52:23,615 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:23,617 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:23,632 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: 1234
+2022-11-04 21:52:45,202 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:45,260 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:45,264 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:52:45,266 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 21:52:45,270 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 21:52:45,272 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:45,273 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:52:45,276 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,277 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,280 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:52:45,284 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [modificar] Turno 0 modificado correctamente
+2022-11-04 21:52:45,288 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 21:52:45,290 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,292 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: 1234
+2022-11-04 21:52:45,324 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:45,325 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:45,326 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:52:45,327 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,328 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:45,330 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 21:52:45,331 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 21:52:45,354 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:45,358 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:45,359 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:52:45,360 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:45,361 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:52:45,362 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,363 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,365 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:52:45,367 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,368 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,368 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: 1234
+2022-11-04 21:52:45,402 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:45,403 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:45,404 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:52:45,405 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:45,406 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 21:52:45,406 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 21:52:45,422 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:45,424 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:45,425 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:52:45,427 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 21:52:45,428 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 21:52:45,429 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:45,430 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:52:45,431 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 21:52:45,432 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 21:52:45,433 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,434 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,436 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:52:45,437 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 21:52:45,438 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 21:52:45,438 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:52:45,440 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,441 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,442 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 1 turnos encontrados
+2022-11-04 21:52:45,477 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:52:45,478 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:52:45,479 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:52:45,480 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:52:45,480 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:52:45,481 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:52:45,483 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:52:45,484 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:52:45,485 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [eliminar] Turno 1 eliminado correctamente
+2022-11-04 21:52:45,486 WARN c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 NO encontrado
+2022-11-04 21:57:12,313 ERROR c.e.p.i.d.u.ConfiguracionBd [main] org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/elian/test.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/elian/test.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+2022-11-04 21:57:27,254 ERROR c.e.p.i.d.u.ConfiguracionBd [main] org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/elian/test.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/elian/test.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+2022-11-04 21:58:30,533 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 21:58:30,584 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 21:58:30,588 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 21:58:30,589 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 21:58:30,591 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 21:58:30,592 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 21:58:30,594 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 21:58:30,595 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 21:58:30,596 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 21:58:30,599 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:58:30,602 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:58:30,605 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:58:30,606 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 21:58:30,607 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 21:58:30,609 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 21:58:30,611 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 21:58:30,613 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 21:58:30,617 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 1 turnos encontrados
+2022-11-04 22:01:06,799 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:01:06,845 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:01:06,850 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:01:06,851 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:01:06,853 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:01:06,854 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:01:06,856 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:01:06,857 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 22:01:06,858 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 22:01:06,861 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:01:06,863 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:01:06,865 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 22:01:06,866 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:01:06,867 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:01:06,869 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno 0 creado con exito
+2022-11-04 22:01:06,872 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:01:06,874 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:01:06,876 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 1 turnos encontrados
+2022-11-04 22:02:12,162 ERROR c.e.p.i.d.u.ConfiguracionBd [main] org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "\000d\000aALTER TABLE turnos [*]AUTO_INCREMENT=1"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "\000d\000aALTER TABLE turnos [*]AUTO_INCREMENT=1"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+ALTER TABLE turnos AUTO_INCREMENT=1 [42001-214]
+2022-11-04 22:07:08,451 ERROR c.e.p.i.d.u.ConfiguracionBd [main] org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "\000d\000aALTER TABLE turnos [*]AUTO_INCREMENT=1"; se esperaba "., ADD, SET, RENAME, DROP, ALTER"
+Syntax error in SQL statement "\000d\000aALTER TABLE turnos [*]AUTO_INCREMENT=1"; expected "., ADD, SET, RENAME, DROP, ALTER"; SQL statement:
+
+ALTER TABLE turnos AUTO_INCREMENT=1 [42001-214]
+2022-11-04 22:07:33,515 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:07:33,570 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:07:33,574 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:07:33,576 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:07:33,577 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:07:33,579 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:07:33,580 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:07:33,582 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 22:07:33,583 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 22:07:33,586 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:07:33,587 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:07:33,589 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente90123 con odontologo 1234 creado con exito
+2022-11-04 22:07:33,591 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:07:33,592 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:07:33,593 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente90125 con odontologo 4321 creado con exito
+2022-11-04 22:07:33,595 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:07:33,596 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:07:33,598 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 1 turnos encontrados
+2022-11-04 22:10:21,859 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:10:21,907 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:10:21,912 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:10:21,913 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:10:21,915 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:10:21,917 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:10:21,920 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:10:21,921 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 22:10:21,922 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 22:10:21,926 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:10:21,927 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:10:21,929 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:10:21,930 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:10:21,932 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:10:21,933 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90125 con odontologo 4321 creado con exito
+2022-11-04 22:10:21,934 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:10:21,936 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:10:21,939 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:10:21,940 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:10:21,940 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 2 turnos encontrados
+2022-11-04 22:11:12,158 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:11:12,213 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:11:12,217 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:11:12,219 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:11:12,220 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:11:12,221 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:11:12,223 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:11:12,226 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,227 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,230 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:11:12,233 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [modificar] Turno 0 modificado correctamente
+2022-11-04 22:11:12,235 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:11:12,236 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,239 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: 1234
+2022-11-04 22:11:12,262 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:11:12,263 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:11:12,264 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:11:12,266 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,267 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:11:12,269 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 22:11:12,270 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 22:11:12,286 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:11:12,287 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:11:12,289 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:11:12,290 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:11:12,291 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:11:12,292 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,293 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,294 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:11:12,295 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,296 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,297 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: 1234
+2022-11-04 22:11:12,313 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:11:12,314 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:11:12,315 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:11:12,316 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:11:12,317 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 22:11:12,317 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 22:11:12,332 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:11:12,333 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:11:12,335 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:11:12,335 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:11:12,336 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:11:12,337 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:11:12,338 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:11:12,339 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 22:11:12,340 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 22:11:12,341 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,343 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,344 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:11:12,345 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:11:12,345 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:11:12,346 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90125 con odontologo 4321 creado con exito
+2022-11-04 22:11:12,348 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,348 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,349 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:11:12,350 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:11:12,351 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 2 turnos encontrados
+2022-11-04 22:11:12,368 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:11:12,369 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:11:12,370 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:11:12,371 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:11:12,372 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:11:12,373 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:11:12,374 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:11:12,375 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:11:12,377 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [eliminar] Turno 1 eliminado correctamente
+2022-11-04 22:11:12,377 WARN c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 NO encontrado
+2022-11-04 22:14:45,293 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:14:45,340 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:14:45,345 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:14:45,346 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:14:45,348 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:14:45,350 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:14:45,351 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:14:45,354 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,355 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,358 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:14:45,362 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [modificar] Turno 0 modificado correctamente
+2022-11-04 22:14:45,364 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:14:45,365 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,368 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: Turno{id=1, fecha=2022-11-04, odontologo=1234, paciente=90125}
+2022-11-04 22:14:45,390 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:14:45,392 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:14:45,393 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:14:45,394 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,395 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:14:45,396 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 22:14:45,397 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 22:14:45,415 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:14:45,417 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:14:45,418 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:14:45,419 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:14:45,419 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:14:45,420 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,421 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,423 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:14:45,424 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,425 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,426 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 encontrado: Turno{id=1, fecha=2022-11-04, odontologo=1234, paciente=90123}
+2022-11-04 22:14:45,450 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:14:45,452 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:14:45,453 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:14:45,454 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:14:45,455 ERROR c.e.p.i.d.h.TurnoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.NoEncontradoException: El odontologo y/o el paciente no son válidos
+2022-11-04 22:14:45,456 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 0 turnos encontrados
+2022-11-04 22:14:45,477 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:14:45,478 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:14:45,481 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:14:45,482 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 NO encontrado
+2022-11-04 22:14:45,484 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90125 creado con exito
+2022-11-04 22:14:45,485 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:14:45,487 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:14:45,488 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 22:14:45,489 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 22:14:45,490 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,491 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,493 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:14:45,494 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:14:45,495 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:14:45,496 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90125 con odontologo 4321 creado con exito
+2022-11-04 22:14:45,498 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,499 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,501 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90125 encontrado: Paciente{dni=90125, nombre='Roberta', apellido='Diaz', domicilio='Carrera 45', fechaAlta=null}
+2022-11-04 22:14:45,502 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 encontrado: Odontologo{matricula=4321, nombre='Damian', apellido='Castro'}
+2022-11-04 22:14:45,503 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [listarTodos] 2 turnos encontrados
+2022-11-04 22:14:45,522 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:14:45,523 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 NO encontrado
+2022-11-04 22:14:45,524 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 90123 creado con exito
+2022-11-04 22:14:45,526 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:14:45,527 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:14:45,527 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 90123 encontrado: Paciente{dni=90123, nombre='Gladys', apellido='Moreno', domicilio='Calle 45', fechaAlta=null}
+2022-11-04 22:14:45,528 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:14:45,530 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [crear] Turno para paciente 90123 con odontologo 1234 creado con exito
+2022-11-04 22:14:45,536 INFO c.e.p.i.d.h.TurnoDaoH2 [main] [eliminar] Turno 1 eliminado correctamente
+2022-11-04 22:14:45,537 WARN c.e.p.i.d.h.TurnoDaoH2 [main] [obtener] Turno 1 NO encontrado
+2022-11-04 22:30:29,225 ERROR c.e.p.i.d.u.ConfiguracionBd [main] Error: unable to load driver class!
+2022-11-04 22:30:59,548 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:30:59,594 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:30:59,600 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:30:59,602 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 22:31:45,130 ERROR c.e.p.i.d.u.ConfiguracionBd [main] Error: unable to load driver class!
+2022-11-04 22:33:07,053 ERROR c.e.p.i.d.u.ConfiguracionBd [main] Error: No fue posible cargar la clase del driver
+2022-11-04 22:33:48,406 ERROR c.e.p.i.d.u.ConfiguracionBd [main] Error: No fue posible cargar la clase del driver
+2022-11-04 22:35:20,466 ERROR c.e.p.i.d.u.ConfiguracionBd [main] Error: No fue posible cargar la clase del driver
+2022-11-04 22:36:07,263 ERROR c.e.p.i.d.u.ConfiguracionBd [main] Error: No fue posible cargar la clase del driver
+2022-11-04 22:37:27,121 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:37:53,737 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 1234 NO encontrado
+2022-11-04 22:37:53,740 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 1234 creado con exito
+2022-11-04 22:39:42,311 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:40:00,379 WARN c.e.p.i.d.h.PacienteDaoH2 [main] [obtener] Paciente 1234 NO encontrado
+2022-11-04 22:40:00,382 INFO c.e.p.i.d.h.PacienteDaoH2 [main] [crear] Paciente 1234 creado con exito
+2022-11-04 22:56:00,628 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 22:56:16,033 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 22:56:16,036 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 22:56:57,397 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Eliana', apellido='Chavez'}
+2022-11-04 22:56:57,399 ERROR c.e.p.i.d.h.OdontologoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.DuplicadoException: El odontologo ya se encuentra registrado. Intenta eliminarlo y crearlo nuevamente o modificarlo
+2022-11-04 23:31:21,602 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 23:31:21,643 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 23:31:21,648 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 23:31:21,649 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 4321 NO encontrado
+2022-11-04 23:31:21,650 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 4321 creado con exito
+2022-11-04 23:31:21,652 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [listarTodos] 2 odontologos encontrados
+2022-11-04 23:31:21,672 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 23:31:21,673 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 23:31:21,674 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 23:31:21,676 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 23:31:21,678 ERROR c.e.p.i.d.h.OdontologoDaoH2 [main] main.java.com.elianachv.backend1.proyecto.exception.DuplicadoException: El odontologo ya se encuentra registrado. Intenta eliminarlo y crearlo nuevamente o modificarlo
+2022-11-04 23:31:21,679 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [listarTodos] 1 odontologos encontrados
+2022-11-04 23:31:21,702 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 23:31:21,703 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 23:31:21,704 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 23:31:21,707 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Tatiana', apellido='Vargas'}
+2022-11-04 23:31:21,737 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 23:31:21,738 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 23:31:21,739 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 23:31:21,741 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [eliminar] Odontologo 1234 eliminado correctamente
+2022-11-04 23:31:21,743 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 23:31:21,759 INFO c.e.p.i.d.u.ConfiguracionBd [main] La base de datos se configuró correctamente y está lista para usar
+2022-11-04 23:31:21,761 WARN c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 NO encontrado
+2022-11-04 23:31:21,761 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [crear] Odontologo 1234 creado con exito
+2022-11-04 23:31:21,765 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [modificar] Odontologo 1234 modificado correctamente
+2022-11-04 23:31:21,766 INFO c.e.p.i.d.h.OdontologoDaoH2 [main] [obtener] Odontologo 1234 encontrado: Odontologo{matricula=1234, nombre='Lina', apellido='Vargas'}
