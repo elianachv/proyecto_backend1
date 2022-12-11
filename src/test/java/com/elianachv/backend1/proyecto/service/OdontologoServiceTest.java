@@ -1,98 +1,159 @@
 package com.elianachv.backend1.proyecto.service;
 
-import com.elianachv.backend1.proyecto.dao.util.ConfiguracionBd;
+import com.elianachv.backend1.proyecto.dto.OdontologoDto;
 import com.elianachv.backend1.proyecto.entity.Odontologo;
 import com.elianachv.backend1.proyecto.exception.DuplicadoException;
 import com.elianachv.backend1.proyecto.exception.NoEncontradoException;
+import com.elianachv.backend1.proyecto.model.GenericResponse;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class OdontologoServiceTest {
 
-    private final OdontologoService odontologoService;
+    @Autowired
+    private OdontologoService odontologoService;
 
-    public OdontologoServiceTest() {
-        ConfiguracionBd configuracionBd = new ConfiguracionBd(
-                "org.h2.Driver",
-                "jdbc:h2:mem:~/test;INIT=RUNSCRIPT FROM 'classpath:sql/init.sql'",
-                "sa",
-                ""
-        );
-        odontologoService = new OdontologoService(configuracionBd);
-    }
 
     @Test
     public void debeCrearOdontologoExitosamente() throws DuplicadoException, NoEncontradoException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
+        OdontologoDto o = new OdontologoDto(9999, "Milena", "Uribe");
 
         //CUANDO
         odontologoService.crearOdontologo(o);
 
         //ENTONCES
-        Assertions.assertNotNull(odontologoService.buscarOdontologo(1234).getData());
+        Assertions.assertNotNull(odontologoService.buscarOdontologoPorMatricula(9999).getData());
     }
 
     @Test(expected = DuplicadoException.class)
     public void noDebeCrearOdontologoDuplicado() throws DuplicadoException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
+        OdontologoDto o = new OdontologoDto(1234, "Tatiana", "Vargas");
 
         //CUANDO
         odontologoService.crearOdontologo(o);
         odontologoService.crearOdontologo(o);
 
         //ENTONCES
-        List<Odontologo> odontologos = (List<Odontologo>) odontologoService.listarOdontologos().getData();
+        List<OdontologoDto> odontologos = (List<OdontologoDto>) odontologoService.listarOdontologos().getData();
         Assertions.assertEquals(1, odontologos.size());
     }
 
     @Test
     public void debeModificarOdontologoExitosamente() throws DuplicadoException, NoEncontradoException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
+        OdontologoDto o = new OdontologoDto(5555, "Roberto", "Duran");
         odontologoService.crearOdontologo(o);
-        o.setNombre("Lina");
+        o.setNombre("Mario");
 
         //CUANDO
-        odontologoService.modificarOdontologo(1234, o);
+        odontologoService.modificarOdontologo(o);
 
         //ENTONCES
-        Odontologo odontologoEsperado = (Odontologo) odontologoService.buscarOdontologo(1234).getData();
-        Assertions.assertEquals("Lina", odontologoEsperado.getNombre());
+        OdontologoDto odontologoEsperado = (OdontologoDto) odontologoService.buscarOdontologoPorMatricula(5555).getData();
+        Assertions.assertEquals("Mario", odontologoEsperado.getNombre());
+    }
+
+    @Test
+    @Ignore
+    public void debeEliminarOdontologoExitosamente() throws NoEncontradoException, DuplicadoException {
+        //DADO
+        OdontologoDto o = new OdontologoDto(4567, "Lina", "Palacios");
+        odontologoService.crearOdontologo(o);
+
+        //CUANDO
+        odontologoService.eliminarOdontologo(4567);
+
+        //ENTONCES
+        Assertions.assertFalse(odontologoService.buscarOdontologoPorMatricula(4567).isOk());
     }
 
     @Test(expected = NoEncontradoException.class)
-    public void debeEliminarOdontologoExitosamente() throws NoEncontradoException, DuplicadoException {
+    public void noDebeEliminarOdontologoNoRegistrado() throws NoEncontradoException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Lina", "Vargas");
-        odontologoService.crearOdontologo(o);
 
         //CUANDO
-        odontologoService.eliminarOdontologo(1234);
+        GenericResponse genericResponse = odontologoService.eliminarOdontologo(1111);
 
         //ENTONCES
-        Assertions.assertFalse(odontologoService.buscarOdontologo(1234).isOk());
+        Assertions.assertFalse(genericResponse.isOk());
     }
 
     @Test
     public void debeListarOdontologosCorrectamente() throws DuplicadoException {
         //DADO
-        Odontologo o1 = new Odontologo(1234, "Tatiana", "Vargas");
-        Odontologo o2 = new Odontologo(4321, "Pedro", "Flores");
+        OdontologoDto o1 = new OdontologoDto(7777, "Yenny", "Mora");
+        OdontologoDto o2 = new OdontologoDto(8888, "Julian", "Forero");
         odontologoService.crearOdontologo(o1);
         odontologoService.crearOdontologo(o2);
 
         //CUANDO
-        List<Odontologo> odontologos = (List<Odontologo>) odontologoService.listarOdontologos().getData();
+        List<OdontologoDto> odontologos = (List<OdontologoDto>) odontologoService.listarOdontologos().getData();
 
         //ENTONCES
         Assertions.assertEquals(2, odontologos.size());
+    }
+
+    @Test
+    public void debeBuscarOdontologoPorIdExitosamente() throws DuplicadoException, NoEncontradoException {
+        //DADO
+        OdontologoDto o1 = new OdontologoDto(2020, "Pedro", "Roman");
+        GenericResponse response1 = odontologoService.crearOdontologo(o1);
+
+        long idCreado = ((Odontologo) response1.getData()).getId();
+
+        //CUANDO
+        GenericResponse response = odontologoService.buscarOdontologoPorId(idCreado);
+
+        //ENTONCES
+        Assertions.assertTrue(response.isOk());
+        Assertions.assertEquals(o1.getNombre(), ((OdontologoDto) response.getData()).getNombre());
+    }
+
+    @Test
+    public void debeBuscarOdontologoPorMatriculaExitosamente() throws DuplicadoException, NoEncontradoException {
+        //DADO
+        OdontologoDto o1 = new OdontologoDto(9823, "Lorena", "Paez");
+        odontologoService.crearOdontologo(o1);
+
+        //CUANDO
+        GenericResponse response = odontologoService.buscarOdontologoPorMatricula(9823);
+
+        //ENTONCES
+        Assertions.assertTrue(response.isOk());
+        Assertions.assertEquals(o1.getNombre(), ((OdontologoDto) response.getData()).getNombre());
+    }
+
+    @Test(expected = NoEncontradoException.class)
+    public void debeGenerarExcepcionCuandoBuscaOdontologoPorMatricula() throws NoEncontradoException {
+        //DADO
+
+        //CUANDO
+        GenericResponse response = odontologoService.buscarOdontologoPorMatricula(9292);
+
+        //ENTONCES
+        Assertions.assertFalse(response.isOk());
+    }
+
+    @Test(expected = NoEncontradoException.class)
+    public void debeGenerarExcepcionCuandoBuscaOdontologoPorId() throws NoEncontradoException {
+        //DADO
+
+        //CUANDO
+        GenericResponse response = odontologoService.buscarOdontologoPorId(9);
+
+        //ENTONCES
+        Assertions.assertFalse(response.isOk());
     }
 
 }

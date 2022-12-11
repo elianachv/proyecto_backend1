@@ -1,12 +1,41 @@
 package com.elianachv.backend1.proyecto.entity;
 
-public class Domicilio {
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Entity
+@Table(name = "domicilios")
+public class Domicilio implements Serializable {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "calle")
     private String calle;
+    @Column(name = "numero")
     private int numero;
+    @Column(name = "localidad")
     private String localidad;
+    @Column(name = "provincia")
     private String provincia;
+
+    @OneToOne(mappedBy = "domicilio", cascade = CascadeType.ALL)
+    @JsonBackReference(value = "domicilio")
+    private Paciente paciente;
+
+    public Domicilio() {
+    }
+
+    public Domicilio(String calle, int numero, String localidad, String provincia) {
+        this.calle = calle;
+        this.numero = numero;
+        this.localidad = localidad;
+        this.provincia = provincia;
+    }
 
     public Domicilio(int id, String calle, int numero, String localidad, String provincia) {
         this.id = id;
@@ -16,11 +45,13 @@ public class Domicilio {
         this.provincia = provincia;
     }
 
-    public Domicilio(String calle, int numero, String localidad, String provincia) {
+    public Domicilio(int id, String calle, int numero, String localidad, String provincia, Paciente paciente) {
+        this.id = id;
         this.calle = calle;
         this.numero = numero;
         this.localidad = localidad;
         this.provincia = provincia;
+        this.paciente = paciente;
     }
 
     public int getId() {
@@ -61,6 +92,14 @@ public class Domicilio {
 
     public void setProvincia(String provincia) {
         this.provincia = provincia;
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
     }
 
     public String getDomicilioCompleto() {

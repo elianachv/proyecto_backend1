@@ -1,0 +1,599 @@
+swagger: '2.0'
+info:
+  description: >-
+    Especificaciones técnicas para consumo de los servicios de la api del proyecto integrador de la materia backend1  Swagger at [http://backend1.com.co](http://backend1.com)
+  version: 1.0.0
+  title: Clinica Odontologica (Proyecto Integrador Backend1)
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: elianachavezv@outlook.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost:8080
+basePath: /v1
+tags:
+  - name: odontologos
+    description: Servicios relacionados con los odontologos del sistema
+  - name: pacientes
+    description: Servicios relacionados con los pacientes del sistema
+  - name: turnos
+    description: Servicios relacionados con los turnos del sistema
+schemes:
+  - https
+  - http
+paths:
+  /odontologos:
+    get:
+      tags:
+        - odontologos
+      summary: Obtiene todos los odontologos del sistema
+      description: ""
+      operationId: listarOdontologos
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/GenericResponseListaOdontologo'
+      deprecated: false
+
+  /odontologos/matricula/{matricula}:
+    get:
+      tags:
+        - odontologos
+      summary: Obtiene la información del odontologo con la matricula especificada
+      description: ""
+      parameters:
+        - name: matricula
+          in: path
+          description: matricula del odontologo
+          required: true
+          type: integer
+          format: int64
+      operationId: buscarOdontologoPorMatricula
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseOdontologo'
+      deprecated: false
+
+  /odontologos/id/{id}:
+    get:
+      tags:
+        - odontologos
+      summary: Obtiene la información del odontologo con el id especificado
+      description: ""
+      parameters:
+        - name: id
+          in: path
+          description: id del odontologo
+          required: true
+          type: integer
+          format: int64
+      operationId: buscarOdontologoPorId
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseOdontologo'
+      deprecated: false
+
+  /odontologos/crear:
+    post:
+      tags:
+        - odontologos
+      summary: Crea un odontologo
+      description: ""
+      operationId: crearOdontologo
+      parameters:
+        - in: body
+          name: body
+          description: Objeto odontologo para guardar en la base de datos
+          required: true
+          schema:
+            $ref: '#/definitions/Odontologo'
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /odontologos/modificar:
+    put:
+      tags:
+        - odontologos
+      summary: Modifica un odontologo
+      description: ""
+      operationId: modificarOdontologo
+      parameters:
+        - in: body
+          name: body
+          description: Objeto odontologo para guardar en la base de datos
+          required: true
+          schema:
+            $ref: '#/definitions/RequestCrearOdontologo'
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /odontologos/eliminar/matricula/{matricula}:
+    delete:
+      tags:
+        - odontologos
+      summary: Elimina un odontologo
+      description: ""
+      operationId: eliminarOdontologo
+      parameters:
+        - in: path
+          name: matricula
+          description: Matricula del odontologo a eliminar
+          required: true
+          type: number
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /pacientes:
+    get:
+      tags:
+        - pacientes
+      summary: Obtiene todos los pacientes del sistema
+      description: ""
+      operationId: listarPacientes
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/GenericResponseListaPaciente'
+          deprecated: false
+
+  /pacientes/dni/{dni}:
+    get:
+      tags:
+        - pacientes
+      summary: Obtiene la información del paciente con el dni especificado
+      description: ""
+      parameters:
+        - name: dni
+          in: path
+          description: dni del paciente
+          required: true
+          type: integer
+          format: int64
+      operationId: buscarPacientePorDni
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponsePaciente'
+      deprecated: false
+
+  /pacientes/id/{id}:
+    get:
+      tags:
+        - pacientes
+      summary: Obtiene la información del paciente con el id especificado
+      description: ""
+      parameters:
+        - name: id
+          in: path
+          description: id del paciente
+          required: true
+          type: integer
+          format: int64
+      operationId: buscarPacientePorId
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponsePaciente'
+      deprecated: false
+
+  /pacientes/nombre:
+    get:
+      tags:
+        - pacientes
+      summary: Obtiene la información del paciente con el id especificado
+      description: ""
+      parameters:
+        - name: nombre
+          in: query
+          description: nombre del paciente
+          required: true
+          type: string
+        - name: apellido
+          in: query
+          description: apellido del paciente
+          required: true
+          type: string
+      operationId: buscarPacientePorNombre
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponsePaciente'
+      deprecated: false
+
+  /pacientes/crear:
+    post:
+      tags:
+        - pacientes
+      summary: Registra un paciente en el sistema
+      description: ""
+      parameters:
+        - name: body
+          in: body
+          description: objeto del paciente a guardar
+          required: true
+          type: object
+          schema:
+            $ref: '#/definitions/Paciente'
+      operationId: crearPaciente
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /pacientes/modificar:
+    post:
+      tags:
+        - pacientes
+      summary: Modificar un paciente
+      description: ""
+      parameters:
+        - name: body
+          in: body
+          description: objeto del paciente a modificar
+          required: true
+          type: object
+          schema:
+            $ref: '#/definitions/Paciente'
+      operationId: modificarPaciente
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /pacientes/eliminar/dni/{dni}:
+    delete:
+      tags:
+        - pacientes
+      summary: Elimina un paciente
+      description: ""
+      operationId: eliminarPaciente
+      parameters:
+        - in: path
+          name: matricula
+          description: Dni del paciente a eliminar
+          required: true
+          type: number
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /turnos:
+    get:
+      tags:
+        - turnos
+      summary: Obtiene todos los turnos del sistema
+      description: ""
+      operationId: listarTurnos
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/GenericResponseListaTurnos'
+          deprecated: false
+
+  /turnos/rol:
+    get:
+      tags:
+        - turnos
+      summary: Obtiene la información de los turnos agendados para un odontologo o paciente
+      description: ""
+      parameters:
+        - name: rol
+          in: query
+          description: rol PACIENTE o ODONTOLOGO
+          required: true
+          type: string
+        - name: identificacion
+          in: query
+          description: identificacion del usuario
+          required: true
+          type: integer
+      operationId: buscarTurnosPorRol
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseListaTurnos'
+      deprecated: false
+
+  /turnos/fecha:
+    get:
+      tags:
+        - turnos
+      summary: Obtiene la información de los turnos agendados para una fecha
+      description: ""
+      parameters:
+        - name: fecha
+          in: query
+          description: fecha
+          required: true
+          type: string
+      operationId: buscarTurnosPorFecha
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseListaTurnos'
+      deprecated: false
+
+  /turnos/id/{id}:
+    get:
+      tags:
+        - turnos
+      summary: Obtiene la información del turno correspondiente al id
+      description: ""
+      parameters:
+        - name: id
+          in: path
+          description: id del turno
+          required: true
+          type: string
+      operationId: buscarTurnoPorId
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseTurno'
+      deprecated: false
+
+  /turnos/crear:
+    post:
+      tags:
+        - turnos
+      summary: Crea un turno
+      description: ""
+      operationId: crearTurno
+      parameters:
+        - in: body
+          name: body
+          description: Objeto turno para guardar en la base de datos
+          required: true
+          schema:
+            $ref: '#/definitions/Turno'
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /turnos/modificar:
+    put:
+      tags:
+        - turnos
+      summary: Modifica un turno
+      description: ""
+      operationId: modificarTurno
+      parameters:
+        - in: body
+          name: body
+          description: Objeto turno para guardar en la base de datos
+          required: true
+          schema:
+            $ref: '#/definitions/Turno'
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+
+  /turnos/eliminar/id/{id}:
+    delete:
+      tags:
+        - turnos
+      summary: Elimina un turno
+      description: ""
+      operationId: eliminarTurnoPorId
+      parameters:
+        - in: path
+          name: id
+          description: id del turno
+          required: true
+          type: number
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Operacion exitosa
+          schema:
+            $ref: '#/definitions/GenericResponseCrearOk'
+      deprecated: false
+definitions:
+  Odontologo:
+    type: object
+    properties:
+      matricula:
+        type: integer
+      nombre:
+        type: string
+      apellido:
+        type: string
+  GenericResponseListaOdontologo:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Odontologo'
+  GenericResponseOdontologo:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        $ref: '#/definitions/Odontologo'
+  GenericResponseCrearOk:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        type: number
+
+  Paciente:
+    type: object
+    properties:
+      dni:
+        type: integer
+      nombre:
+        type: string
+      apellido:
+        type: string
+      domicilio:
+        type: string
+      fechaAlta:
+        type: string
+
+  GenericResponseListaPaciente:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Paciente'
+
+  GenericResponsePaciente:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        $ref: '#/definitions/Paciente'
+
+  Turno:
+    type: object
+    properties:
+      matriculaOdontologo:
+        type: integer
+      dniPaciente:
+        type: string
+      fecha:
+        type: string
+
+  GenericResponseListaTurnos:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/Turno'
+
+  GenericResponseTurno:
+    type: object
+    properties:
+      ok:
+        type: boolean
+      estado:
+        type: string
+      detalle:
+        type: string
+      data:
+        $ref: '#/definitions/Turno'
+
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io

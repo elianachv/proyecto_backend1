@@ -1,25 +1,61 @@
 package com.elianachv.backend1.proyecto.entity;
 
-public class Odontologo {
-   private int matricula;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
+
+@Entity
+@Table(name = "odontologos")
+public class Odontologo implements Serializable {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Column(name = "matricula")
+    private long matricula;
+    @Column(name = "nombre")
     private String nombre;
+    @Column(name = "apellido")
     private String apellido;
 
-    public Odontologo(){
+    @OneToMany(mappedBy = "odontologo", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JsonBackReference(value = "odontologo")
+    private List<Turno> turnos;
+
+    public Odontologo() {
 
     }
 
-    public Odontologo(int matricula, String nombre, String apellido) {
+    public Odontologo(long matricula, String nombre, String apellido) {
         this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
     }
 
-    public int getMatricula() {
+    public Odontologo(long id, long matricula, String nombre, String apellido) {
+        this.id = id;
+        this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getMatricula() {
         return matricula;
     }
 
-    public void setMatricula(int matricula) {
+    public void setMatricula(long matricula) {
         this.matricula = matricula;
     }
 
@@ -39,10 +75,19 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
+    public List<Turno> getTurnos() {
+        return turnos;
+    }
+
+    public void setTurnos(List<Turno> turnos) {
+        this.turnos = turnos;
+    }
+
     @Override
     public String toString() {
         return "Odontologo{" +
-                "matricula=" + matricula +
+                "id=" + id +
+                ", matricula=" + matricula +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 '}';

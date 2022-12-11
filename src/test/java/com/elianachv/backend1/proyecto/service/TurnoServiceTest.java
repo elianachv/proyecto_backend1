@@ -1,145 +1,82 @@
 package com.elianachv.backend1.proyecto.service;
 
-import com.elianachv.backend1.proyecto.dao.util.ConfiguracionBd;
-import com.elianachv.backend1.proyecto.entity.Odontologo;
-import com.elianachv.backend1.proyecto.entity.Paciente;
-import com.elianachv.backend1.proyecto.entity.Turno;
+import com.elianachv.backend1.proyecto.dto.OdontologoDto;
+import com.elianachv.backend1.proyecto.dto.PacienteDto;
+import com.elianachv.backend1.proyecto.dto.TurnoDto;
 import com.elianachv.backend1.proyecto.exception.DuplicadoException;
-import com.elianachv.backend1.proyecto.exception.NoEncontradoException;
-import org.junit.jupiter.api.Assertions;
+import com.elianachv.backend1.proyecto.exception.PeticionIncorrectaException;
+import com.elianachv.backend1.proyecto.model.GenericResponse;
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class TurnoServiceTest {
-    private final TurnoService turnoService;
-    private final PacienteService pacienteService;
-    private final OdontologoService odontologoService;
 
-    public TurnoServiceTest() {
-        ConfiguracionBd configuracionBd = new ConfiguracionBd(
-                "org.h2.Driver",
-                "jdbc:h2:mem:~/test;INIT=RUNSCRIPT FROM 'classpath:sql/init.sql'",
-                "sa",
-                ""
-        );
-        turnoService = new TurnoService(configuracionBd);
-        pacienteService = new PacienteService(configuracionBd);
-        odontologoService = new OdontologoService(configuracionBd);
+    @Autowired
+    private OdontologoService odontologoService;
 
-    }
+    @Autowired
+    private PacienteService pacienteService;
+    @Autowired
+    private TurnoService turnoService;
+
 
     @Test
-    public void debeCrearTurnoExitosamente() throws DuplicadoException {
+    @Ignore
+    public void debeCrearTurnoExitosamente() throws DuplicadoException, PeticionIncorrectaException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
-        Paciente p = new Paciente(90123, "Gladys", "Moreno","Calle 45",null);
-        Turno t = new Turno(new Date(), o, p);
-
-        pacienteService.crearPaciente(p);
+        OdontologoDto o = new OdontologoDto(8304, "Ignacio", "Rodriguez");
         odontologoService.crearOdontologo(o);
 
-        //CUANDO
-        turnoService.crearTurno(t);
-
-        //ENTONCES
-        Assertions.assertNotNull(turnoService.buscarTurno(1));
-    }
-
-    @Test
-    public void noDebeCrearTurnoSiElPacienteNoExiste() throws DuplicadoException {
-        //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
-        Paciente p = new Paciente(90123, "Gladys", "Moreno","Calle 45",null);
-        Turno t = new Turno(new Date(), o, p);
-
-        odontologoService.crearOdontologo(o);
-
-        //CUANDO
-        turnoService.crearTurno(t);
-
-        //ENTONCES
-        Assertions.assertEquals(0, turnoService.listarTurnos().size());
-    }
-
-    @Test
-    public void noDebeCrearTurnoSiElOdontologoNoExiste() throws DuplicadoException {
-        //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
-        Paciente p = new Paciente(90123, "Gladys", "Moreno","Calle 45",null);
-        Turno t = new Turno(new Date(), o, p);
-
+        PacienteDto p = new PacienteDto(5746, "Keila", "Gonzalez", "Calle 45 Localidad1 Provincia1", null);
         pacienteService.crearPaciente(p);
 
+        TurnoDto t = new TurnoDto(8304, 5746, LocalDate.now());
+
         //CUANDO
-        turnoService.crearTurno(t);
+        GenericResponse response = turnoService.crearTurno(t);
 
         //ENTONCES
-        Assertions.assertEquals(0, turnoService.listarTurnos().size());
+        Assertions.assertTrue(response.isOk());
     }
 
-    @Test
-    public void debeModificarTurnoExitosamente() throws DuplicadoException {
+    @Test(expected = PeticionIncorrectaException.class)
+    public void debeGenerarExcepcionAlCrearTurnoSiElOdontologoNoEstaRegistrado() throws DuplicadoException, PeticionIncorrectaException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
-        Paciente p = new Paciente(90123, "Gladys", "Moreno","Calle 45",null);
-        Paciente p2 = new Paciente(90125, "Roberta", "Diaz","Carrera 45",null);
-        Turno t = new Turno(new Date(), o, p);
-
+        PacienteDto p = new PacienteDto(7839, "Ramiro", "Velez", "Calle 45 Localidad1 Provincia1", null);
         pacienteService.crearPaciente(p);
-        pacienteService.crearPaciente(p2);
-        odontologoService.crearOdontologo(o);
-        turnoService.crearTurno(t);
+
+        TurnoDto t = new TurnoDto(1111, 7839, LocalDate.now());
 
         //CUANDO
-        t.setPaciente(p2);
-        turnoService.modificarTurno(1,t);
+        GenericResponse response = turnoService.crearTurno(t);
 
         //ENTONCES
-        Assertions.assertEquals(90125, turnoService.buscarTurno(1).getPaciente().getDni());
+        Assertions.assertFalse(response.isOk());
     }
 
-    @Test(expected = NoEncontradoException.class)
-    public void debeEliminarTurnoExitosamente() throws DuplicadoException {
+    @Test(expected = PeticionIncorrectaException.class)
+    public void debeGenerarExcepcionAlCrearTurnoSiElPacienteNoEstaRegistrado() throws DuplicadoException, PeticionIncorrectaException {
         //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
-        Paciente p = new Paciente(90123, "Gladys", "Moreno","Calle 45",null);
-        Turno t = new Turno(new Date(), o, p);
-
-        pacienteService.crearPaciente(p);
+        OdontologoDto o = new OdontologoDto(4903, "Gabriela", "Perez");
         odontologoService.crearOdontologo(o);
-        turnoService.crearTurno(t);
+
+
+        TurnoDto t = new TurnoDto(4903, 2222, LocalDate.now());
 
         //CUANDO
-        turnoService.eliminarTurno(1);
+        GenericResponse response = turnoService.crearTurno(t);
 
         //ENTONCES
-        Assertions.assertNull(turnoService.buscarTurno(1));
+        Assertions.assertFalse(response.isOk());
     }
 
-    @Test
-    public void debeListarTurnosCorrectamente() throws DuplicadoException {
-        //DADO
-        Odontologo o = new Odontologo(1234, "Tatiana", "Vargas");
-        Odontologo o2 = new Odontologo(4321, "Damian", "Castro");
-        Paciente p = new Paciente(90123, "Gladys", "Moreno","Calle 45",null);
-        Paciente p2 = new Paciente(90125, "Roberta", "Diaz","Carrera 45",null);
-        Turno t = new Turno(new Date(), o, p);
-        Turno t2 = new Turno(new Date(), o2, p2);
-
-        pacienteService.crearPaciente(p);
-        pacienteService.crearPaciente(p2);
-        odontologoService.crearOdontologo(o);
-        odontologoService.crearOdontologo(o2);
-        turnoService.crearTurno(t);
-        turnoService.crearTurno(t2);
-
-
-        //CUANDO
-        List<Turno> turnos = turnoService.listarTurnos();
-
-        //ENTONCES
-        Assertions.assertEquals(2, turnos.size());
-    }
 }
